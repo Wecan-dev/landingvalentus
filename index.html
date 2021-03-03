@@ -1,0 +1,1580 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <title>Nueva reto 21</title>
+</head>
+<body>
+
+  <style>
+
+  body{
+      max-width:2500px!important;
+  }
+  .main-banner .mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(155 0 75 / 61%);
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+
+  h1,h2,h3{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+  }
+
+  p{
+    font-family: 'Roboto',sans-serif;
+  }
+  body {
+    overflow: hidden;
+    overflow-y: auto;
+    max-width: 2400px;
+  }
+
+  *:focus {
+    outline: none !important;
+  }
+
+  a:not([href]):not([tabindex]){
+    cursor: pointer;
+  }
+
+  .main-banner {
+    position: relative;
+    overflow: hidden;
+  }
+  .add-btn {
+   margin-top: 6%;
+  }
+
+
+  .main-banner .main-banner__item {
+    position: relative;
+  }
+
+  .main-banner .mask .main-banner__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+  }
+  .img-description {
+    text-align: center;
+  }
+
+  .main-banner__description h1{
+    color: #FFFFFF;
+    font-size: 104px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-bottom: -3%;
+    text-align: inherit;
+  }
+  .main-banner__description h3{
+    color: #FFFFFF;
+    font-size: 69px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-bottom: -2%;
+    text-align: inherit;
+  }
+
+  .main-banner__description p{
+    color: #FFFFFF;
+    font-size: 58px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-bottom: 0;
+  }
+
+  .main-banner .mask .main-banner__text .main-banner__title p {
+    padding: 0 25px;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+      .main-banner .mask .main-banner__text .main-banner__title p {
+          font-size: 55px;
+      }
+  }
+
+  @media (min-width: 0px) and (max-width: 767px) {
+      .main-banner .mask .main-banner__text .main-banner__title p {
+          font-size: 30px;
+          padding: 0;
+          line-height: 1.2;
+      }
+  }
+
+  .main-banner .mask .main-banner__text .main-banner__title span {
+    padding: 0 25px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .btn_custom {
+    background: #cab789;
+    border: 5px solid #cab789;
+    padding: 10px 20px;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+    transition: .5s;
+    border-radius: 5px;
+  }
+
+  .btn_custom a{
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  .btn_custom:hover{
+    color: black;
+    transition: .5s;
+    background: transparent;
+  }
+
+  .btn_custom:hover a{
+      color: #000;
+  }
+
+  .main-banner__img1 img{
+      width: 28.5rem;
+  }
+
+  .img-description {
+    margin-bottom: 2%;
+  }
+
+  .main-banner .mask .main-banner__text .main-banner__description {
+    padding: 0 25px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 2rem;
+    margin: 15px 0 0 0;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+      .main-banner .mask .main-banner__text .main-banner__description {
+          font-size: 18px;
+      }
+  }
+
+  @media (min-width: 0px) and (max-width: 767px) {
+      .main-banner .mask .main-banner__text .main-banner__description {
+          font-size: 18px;
+          padding: 0;
+      }
+  }
+
+  .main-banner .main-banner__img {
+    width: 100%;
+    height: 92vh;
+  }
+
+  .main-banner .main-banner__img img {
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: cover;
+  }
+
+  .main-banner .main-banner__img2 {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .main-banner .main-banner__img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .main_menu{
+    width: 79%;
+    text-align: center;
+  }
+
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  button:focus {
+    outline: none!important;
+  }
+
+  .product-one {
+    width: 50%;
+  }
+  .main-banner__content .slick-dots {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    bottom: 12%;
+    right: 4%;
+    width: 0%;
+    transform: rotate(449deg);
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .main-banner__content .slick-dots {
+        left: 45%;
+    }
+  }
+
+  .main-banner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-banner .main-banner__item {
+    position: relative;
+  }
+
+  .more_info{
+    background-color: #E6266A;
+  }
+
+  .more_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .more_text h3{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  .more_ws {
+    font-weight: 500;
+    background-color: #61ce70;
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: none;
+  }
+  .more_ws a {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .more_text {
+    width: 45%;
+  }
+
+  .secreto-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .secreto-img img{
+    width: 85%;
+  }
+
+  .secreto-img {
+    text-align: end;
+  }
+
+  .secreto-text h3{
+    color: #DE162E;
+    font-size: 74px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: -6%;
+  }
+
+  .secreto-text h2{
+    color: #E6266A;
+    font-size: 118px;
+    text-transform: uppercase;
+  }
+
+  .secreto-text p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 0.9px;
+  }
+
+  section.pregunta {
+    background: #FAB40D;
+    padding: 70px 0px 70px 0px;
+  }
+
+  .pregunta h2{
+    color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 31px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    text-shadow: 10px 10px 20px rgb(0 0 0 / 11%);
+    text-align: center;
+  }
+
+  iframe.elementor-video-iframe{
+    width: 700px;
+    height: 400px;
+    padding: 0px 70px 0px 70px;
+    background: black;
+  }
+  section.facil.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .t-p h4{
+    text-align: center;
+    color: black;
+    margin-bottom: 5%;
+  }
+
+  .facil h3{
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.3em;
+  }
+  .facil h2{
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 41px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.3em;
+  }
+
+  .products-img{
+    width: 65%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .facil p{
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: none;
+    font-size: 14px;
+    color: #000;
+    font-family: "Montserrat", Sans-serif;
+  }
+
+  .solucion-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1140px;
+  }
+
+  .img1 img {
+    width: 380px;
+    height: 380px;
+  }
+  section.solucion {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .solucion-text {
+    padding: 35px;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .solucion-text h2{
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Roboto", Sans-serif;
+  }
+
+  .logica{
+    color: #E6266A!important;
+    font-size: 27px!important;
+    font-weight: 600!important;
+    text-align: center;
+  }
+
+  section.controlar {
+    background: #FAB40D;
+    padding: 70px 0px 70px 0px;
+    text-align: center;
+  }
+
+  .controlar h2{
+    color: #ffffff;
+    font-size: 75px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    text-shadow: 10px 10px 20px rgb(0 0 0 / 11%);
+  }
+
+  .controlar h3{
+    color: #000000;
+    font-size: 39px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    text-shadow: 10px 10px 20px rgb(0 0 0 / 11%);
+  }
+
+  section.disfruta {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .disfruta-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .disfruta-img img{
+    width: 96%;
+  }
+
+  .disfruta-img{
+    width: 34%;
+  }
+
+  .disfruta-text h3{
+    color: #443D3E;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 31px;
+  }
+  
+  .toTop {
+    background-color: #d6d6d6;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    z-index: 99;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  a.toTop:hover {
+    color: #33508d;
+  }
+
+  .toTop img{
+    transform: rotate(270deg);
+    width: 100%;
+  }
+
+  .accordion{
+    margin: 40px 0;
+  }
+  .accordion .item {
+    border: none;
+    margin-bottom: 10px;
+    background: none;
+    box-shadow: 0 1px 8px 0px rgb(0 0 0 / 20%);
+    width: 90%;
+  }
+  .t-p{
+    border-width: 1px;
+    border-bottom-color: #686868;
+    background-color: rgba(25,25,25,0);
+    color: #686868;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8em;
+    padding: 15px 35px 15px 35px;
+  }
+  .accordion .item .item-header h2 button.btn.btn-link {
+      border-width: 1px;
+      border-bottom: 1px solid #686868;
+      background-color: rgba(35,35,35,0);
+      padding: 15px 30px 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+  }
+  .accordion .item .item-header {
+      border-bottom: none;
+      background: transparent;
+      padding: 0px;
+      margin: 2px;
+  }
+
+  .accordion .item .item-header h2 button {
+      color: #000;
+      font-size: 20px;
+      padding: 15px;
+      display: block;
+      width: 100%;
+      text-align: left;
+  }
+
+  .accordion .item .item-header h2 i {
+      float: right;
+      font-size: 30px;
+      color: #61ce70;
+      width: 60px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+  }
+
+  .accordion .item .item-header button h3{
+      font-size: 16px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-family: 'Roboto',sans-serif;
+  }
+
+  button.btn.btn-link.collapsed i {
+      transform: rotate(270deg);
+  }
+
+  button.btn.btn-link i {
+    transform: rotate(180deg);
+    transition: 0.5s;
+  }
+
+  .btn:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  .producto-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description h3{
+    color: #000000;
+    font-family: "Anton", Sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+  }
+
+  .description p{
+    color: #444444;
+    font-family: "Roboto", Sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.6em;
+  }
+
+  .description{
+    width: 40%;
+  }
+
+  .button_custom{
+    font-family: "Roboto", Sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #1fc585;
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    border-color: #1fc585;
+    border-radius: 50px 50px 50px 50px;
+    padding: 17px 40px 17px 40px;
+  }
+
+  .button_custom a{
+    color: #fff;
+  }
+
+  .product-one p{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    text-align: justify;
+  }
+
+  section.producto {
+    padding-bottom: 100px;
+  }
+
+  .control{
+    background-color: #FF1A3F;
+  }
+
+  .control .description h3{
+    color: #fff;
+  }
+
+  .control .description p{
+    color: #fff;
+  }
+
+  .control .product-one p {
+    color: #fff;
+  }
+
+  .control .t-p{
+    color: #fff;
+  }
+
+  .control .accordion .item .item-header h2 i {
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  section.control {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .accordion .item .item-header h2 button.btn.btn-link {
+    border-width: 1px;
+    border-bottom: 1px solid #fff;
+  }
+
+  section.equilibrio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .reto-text{
+    background-color:  #E6266A;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .reto-text h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    text-shadow: 10px 10px 20px rgb(0 0 0 / 11%);
+    margin-bottom: 0;
+  }
+
+  .reto-text h3{
+    color: #ffffff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    text-shadow: 10px 10px 20px rgb(0 0 0 / 11%);
+    margin-bottom: 0;
+  }
+
+  .reto-video{
+    background-color: #FAB40D;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .reto-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .video-item iframe{
+    width: 390px;
+    height: 200px;
+  }
+
+  .video-item {
+    margin-bottom: 5%;
+  }
+
+  i.fa.fa-whatsapp {
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  i.fa.fa-shopping-cart {
+    margin-right: 10px;
+  }
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    .main-banner .mask .main-banner__text {
+      text-align: center;
+      display: block;
+      top: 15%;
+    }
+
+    .res-btn{
+      display: flex;
+      justify-content: center;
+      margin-top: 2%;
+    }
+
+    .main-banner__img1 img {
+      width: 13rem;
+    }
+
+    .main-banner__description h1 {
+      font-size: 50px;
+    }
+
+    .main-banner__description h3{
+      font-size: 40px;
+    }
+    .main-banner__description p {
+      font-size: 30px;
+    }
+
+
+    i.fa.fa-whatsapp {
+      color: #fff;
+      margin-right: 5px;
+    }
+
+    .img-description img{
+        width: 30%;
+    }
+
+    .more_flex{
+      display: block;
+    }
+
+    .more_ws{
+      width: auto;
+    }
+
+    .more_text {
+      width: auto;
+      text-align: center;
+    }
+    .more_text h3 {
+      font-size: 24px;
+    }
+
+    .secreto-text h3 {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+
+    .secreto-text {
+      text-align: center;
+    }
+    .secreto-text h2 {
+      font-size: 30px;
+    }
+    .secreto-flex{
+      display: block;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .pregunta h2 {
+      font-size: 25px;
+    }
+    .facil h2 {
+      font-size: 30px;
+    }
+    .products-img {
+      width: inherit;
+    }
+    .producto-flex{
+      display: block;
+    }
+    .controlar h2 {
+      color: #ffffff;
+      font-size: 30px;
+    }
+
+    .controlar h3 {
+      font-size: 25px;
+    }
+
+    .disfruta-text h3 {
+      color: #443D3E;
+      font-size: 17px;
+      margin-top: 10%;
+    }
+
+    .disfruta-img{
+      width: auto;
+    }
+
+    .disfruta-img img {
+      width: 70%;
+    }
+
+    .disfruta-flex {
+      display: block;
+      text-align: center;
+    }
+
+    .product-one img{
+      width: 100%;
+    }
+
+    .description{
+      width: auto;
+    }
+    .accordion .item{
+      width: 100%;
+    }
+    section.producto {
+      padding-bottom: 50px;
+    }
+    .description h3 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .accordion .item .item-header button h3 {
+      text-align: inherit;
+    }
+
+    .button_custom {
+      font-family: "Roboto", Sans-serif;
+      font-size: 15px;
+      padding: 10px 19px 10px 19px;
+    }
+
+    .product-one p {
+      text-align: center;
+    }
+
+    section.equilibrio{
+      padding-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .reto-text h3 {
+      font-size: 30px;
+    }
+
+    .video-item iframe {
+      width: 100%;
+    }
+
+    .reto-flex {
+      display: block;
+      text-align: center;
+    }
+
+    section.control {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    section.disfruta {
+      padding-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .reto-text{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .producto{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .main-banner .main-banner__img {
+      width: 100%;
+      height: 100vh;
+    }
+    iframe.elementor-video-iframe {
+      width: 100%;
+      padding: 0;
+    }
+
+    section.controlar{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    section.solucion {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .reto-video{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    section.pregunta{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .solucion-flex{
+      display: block;
+    }
+
+    .solucion-text{
+      width: 100%;
+      height: auto;
+      padding: 29px;
+    }
+
+    .img1 img {
+      width: 100%;
+      height: auto;
+    }
+
+    .more_info{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .product-one{
+      width: auto;
+    }
+
+    .description p {
+      font-size: 17px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .producto-flex{
+      display: block;
+    }
+
+    .controlar h2 {
+      color: #ffffff;
+      font-size: 50px;
+    }
+    .product-one{
+      width: auto;
+    }
+
+    .description{
+      width: auto;
+    }
+
+    .reto-text{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .main-banner__description h1 {
+      font-size: 50px;
+    }
+
+    .main-banner__description p {
+      font-size: 35px;
+    }
+
+    .main-banner__description h3 {
+      font-size: 40px;
+    }
+    section.controlar{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .secreto-flex{
+      display: block;
+    }
+
+    .more_text h3 {
+      font-size: 20px;
+    }
+
+    .more_ws{
+      width: auto;
+    }
+
+    .disfruta-img{
+      width: auto;
+    }
+    .disfruta-img img {
+      width: 45%;
+      margin-bottom: 10%;
+    }
+
+    .disfruta-text h3 {
+      line-height: 40px;
+    }
+    .disfruta-flex {
+      display: block;
+      text-align: center;
+    }
+
+    section.disfruta{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .reto-flex{
+      width: auto;
+    }
+  }
+  @media (min-width: 1080px) and (max-height: 1920px) { 
+    .reto-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 1280px;
+    }
+
+    .reto-video {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  </style>
+
+  <div href="#" class="toTop"> <img src="assets/img/next2.svg" alt=""> </div>
+  <section  class="main-banner">
+    <div class="main-banner__content">
+      <div class="main-banner__item">
+        <div class="mask">
+          <div class="main-banner__text">
+            <div class="main-banner__img1">
+                <img alt="imagen banner" src="assets/img/girl.png">
+            </div>
+            <div class="main-banner__description">
+              <h1>EL PLAN DE </h1>
+              <h3>PERDIDA DE PESO</h3> 
+              <p>MÁS FÁCIL DE SEGUIR</p>
+              <div class="img-description">
+                  <img alt="Logo"src="assets/img/logo-reto.png">
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="main-banner__img">
+            <img alt="Banner" src="assets/img/banner.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="more_info">
+      <div class="more_flex">
+        <div class="more_text">
+            <h3>¿Quieres más información del reto?</h3>
+        </div>
+        <div class="res-btn" >
+          <button class="more_ws"> <a  rel=”noopener” href="https://api.whatsapp.com/send?phone=" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i>Contactar por WhatsApp</a> </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secreto">
+    <div class="secreto-flex">
+      <div class="secreto-text">
+        <h3>NO ES NINGÚN</h3>
+        <h2>SECRETO</h2>
+        <p>Que perder peso no es una tarea fácil, por esta razón <br> millones de personas luchan todos los días y parece <br> imposible conseguir y mantener resultados a largo plazo.
+        </p>
+      </div>
+      <div class="secreto-img">
+        <img src="assets/img/reto1.png" alt="Reto">
+      </div>
+    </div>
+  </section>
+
+  <section class="pregunta">
+      <h2>La gran pregunta es ¿cómo lo hago? <br> ¿Cómo consigo hacer deporte o comer <br> más sano?</h2>
+  </section>
+
+  <section class="facil container">
+    <h3>Queremos hacerlo mucho más fácil</h3>
+    <h2>por eso hemos creado el</h2>
+    <img src="assets/img/logo.png" alt="Logo">
+    <img class="products-img" src="assets/img/productos.jpg" alt="productos">
+    <p>Un programa muy fácil y práctico para crear hábitos saludables con una selección de productos con <br>  ingredientes y nutrientes naturales para llevar tu control de peso al siguiente nivel.  <br>
+        Diseñados con superiores naturales del apetito, antioxidantes, que protegen el sistema inmune y te <br> mantén un metabolismo óptimo.
+    </p>
+    <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482735151?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+  </section>
+  <div class="more_info">
+    <div class="more_flex">
+      <div class="more_text">
+          <h3>¿Quieres más información del reto?</h3>
+      </div>
+      <div class="res-btn" >
+        <button class="more_ws">   <a  rel=”noopener” href="https://api.whatsapp.com/send?phone=" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i>Contactar por WhatsApp</a> </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="solucion">
+    <div class="solucion-flex">
+      <div class="img1">
+        <img  src="assets/img/img1.jpeg" alt="Imagen 1">
+      </div>
+      <div class="solucion-text">
+        <h2>-Disminuye el apetito.</h2>
+        <h2>-Metaboliza las grasas.</h2>
+        <h2>-Regula el nivel de azúcar en sangre.</h2>
+      </div>
+      <div class="img1">
+        <img  src="assets/img/img2.jpeg" alt="Imagen 2">
+      </div>
+      <div class="solucion-text">
+        <h2>-Elimina drásticamente la ansiedad.</h2>
+        <h2>-Mejora el estado de ánimo y la concentración.</h2>
+      </div>
+      <div class="img1">
+        <img  src="assets/img/img3.jpg" alt="Imagen 3">
+      </div>
+      <div class="solucion-text">
+        <h2>-Aplasta el deseo de los antojos</h2>
+        <h2>-Aumenta la circulación y el aporte de oxígeno.</h2>
+      </div>
+      <div class="img1">
+        <img  src="assets/img/img4.jpg" alt="Imagen 4">
+      </div>
+      <div class="solucion-text">
+        <h2 class="logica">Una Solución lógica para <br> la pérdida de peso!</h2>
+      </div>
+      <div class="img1">
+        <img  src="assets/img/img5.jpg" alt="Imagen 5">
+      </div>
+    </div>
+  </section>
+
+  <section class="controlar">
+      <h2>Controlar tu peso</h2>
+      <h3>producirá resultados emocionantes.</h3>
+  </section>
+
+  <section class="disfruta">
+    <div class="disfruta-flex">
+      <div class="disfruta-img">
+        <img  src="assets/img/reto2.png" alt="Reto 2">
+      </div>
+      <div class="disfruta-text">
+        <h3>Disfruta del placer de comprar y <br> lucir la ropa que te gusta y <br> disfrutar de la compañía de tus <br> seres queridos sin complejos.</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="producto">
+    <div class="producto-flex container">
+      <div class="product-one">
+        <img  src="assets/img/reto3.png" alt="Reto 3">
+        <p>Controla tu apetito y la ansiedad tomando una taza de café a 
+            primera hora de la mañana combinado con un suplemento de 
+            fibras con supresiones del apetito haciendo el efecto de un balón 
+            gástrico y antes de dormir una deliciosa  taza de té frío que te 
+            ayuda a desintoxicar el metabolismo y a regular el tránsito 
+        intestinal.</p>
+      </div>
+      <div class="description">
+        <h3>Pack Acelerador</h3>
+        <p>“Ideal para las personas que llevan una vida <br> sedentaria”</p>
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="item">
+              <div class="item-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <h3>Café Optimum</h3>
+                    <i class="fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="t-p">
+                    No es ningún secreto que perder peso no es una tarea fácil, razón por la cual millones de personas luchan con eso todos los días. Queremos hacerlo mucho más fácil, por eso creamos <strong>SlimROAST</strong>  Optimum Dark Roast Coffee, que está diseñado para llevar su control de peso al siguiente nivel. <br>
+                    SlimROAST Optimum Neurologic system para un rendimiento óptimo no se puede lograr con un solo nutriente, requiere una “pila” (o grupo) de varios nutrientes de rendimiento independiente que trabajan juntos. <br>
+                    Formulado con supresores naturales del apetito, buenos ingredientes y componentes detox. SlimROAST Optimum es el complemento perfecto para su programa de control de pérdida de peso <br>
+                    No solo encontrará que controlar su peso con SlimROAST Optimum producirá resultados emocionantes, ¡sino que le encantará el sabor de este delicioso café tostado oscuro!
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   <h3>FIBER PLUS</h3>
+                    <i class="fa fa-angle-down"></i>
+                  </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionExample">
+              <div class="t-p">
+                Creemos que todo el mundo merece la oportunidad de estar saludable y en forma. ¡Es nuestro compromiso ayudarle a conseguirlo! ¿Está preparado para el reto? Si finalmente está listo para controlar su peso y su salud,
+                <strong> ¡AHORA es el momento de hacerlo realidad!</strong>
+                <br>  <br> Skinny Fiber está ENVASADO con algunos de los ingredientes de control de peso 
+                <strong> MÁS PODEROSOS </strong>  del mundo para ayudar a que su cuerpo entre en el modo de control de peso y mantener el peso para siempre. 
+                <br>
+                <br>
+                <ul>
+                  <li>Ayuda a sentirse más lleno y a comer menos.</li>
+                  <li>Ayuda a quemar grasas.</li>
+                  <li>Reduce la absorción de grasa en el cuerpo.</li>
+                  <li>Elimina toxinas.</li>
+                  <li>Reduce los antojos entre comidas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    <div class="item">
+      <div class="item-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h3>Prevail V-TOX</h3>
+          <i class="fa fa-angle-down"></i>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="t-p">
+          Es una exquisita mezcla de ingredientes naturales de todo el mundo que crean un té potente. 
+          <br>
+          <br>
+          <strong>SIN PRODUCTOS QUÍMICOS AGREGADOS. INGREDIENTES BASADOS EN LA NATURALEZA CON PROPIEDADES QUE POTENCIAN EN SISTEMA INMUNE</strong>
+          <br>
+          <br>
+          Polvo de cáscara de naranja, extracto de fruta de rosa mosqueta, extracto de raíz de malvavisco, extracto de flor de madreselva, extracto de flor de manzanilla, extracto de hoja de uva Ursi, extracto de hoja de menta, extracto de hoja de serra, extracto de corteza de espino amarillo. 
+          <br>
+          <br>
+          <ul>
+            <li>Apoya el proceso de eliminación natural del cuerpo.</li>
+            <li>Promueve la regularidad y un tracto digestivo saludable.</li>
+            <li>Mejora la digestión y la función urinaria natural.</li>
+          </ul>
+          <br><strong>Cuando se usa con el conjunto de productos de control de peso Prevail, se mejoran los efectos sinérgicos de V-TOX.</strong>
+        </div>
+        </div>
+      </div>
+    <div class="add-btn">
+        <button class="button_custom"> <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>Pedir Este Pack</a> </button>
+    </div>
+  </section>
+
+  <section class="control">
+    <div class="producto-flex container">
+      <div class="product-one">
+        <img  src="assets/img/reto4.png" alt="Reto 4">
+        <p>Mantén el control de tu apetito y el
+        Manejo de los carbohidratos con una taza de café una bebida con sabor a piña colada y un  suplemento rico en flavonoides.</p>
+      </div>
+      <div class="description">
+        <h3>Pack Control</h3>
+        <p>“Ideal para personas que gustan del <br> deporte”</p>
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="item">
+              <div class="item-header" id="heading4">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <h3>Café Europa Joe</h3>
+                    <i class="fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                <div class="t-p">
+                  Europa Joe es el nuevo café de Valentus fabricado para su comercialización en Europa.<br>
+                  El café arábico que utiliza Valentus para Europa Joe está considerado el mejor (y más caro) café en grano, ya que, aunque tiene menos cuerpo que el robusta, es más equilibrado, aromático y tiene una acidez muy agradable al paladar.
+                  Actúa como estimulante natural del sistema nervioso central, proporciona un rápido aumento de energía y ayuda a una pérdida de peso saludable.
+                  <br> *Cantidad: 24 Monodosis
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-header" id="heading5">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    <h3>Tropical Blast</h3>
+                    <i class="fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+            <div id="collapse5" class="collapse" aria-labelledby="heading5"
+            data-parent="#accordionExample">
+            <div class="t-p">
+                Tropical Blast es otra de las bebidas Funcionales de Valentus, con sabor muy refrescante a Piña Colada y contiene supresores naturales del apetito e ingredientes para ayudar a desintoxicar tu cuerpo. ¡Lo amarás! <br> <br>
+                No es ningún secreto que perder peso no es una tarea fácil. Es por eso que millones de personas luchan con eso todos los días.<br> <br>
+                Queremos hacerlo un poco más fácil, ¡es por eso que creamos Prevail Tropical Blast! Formulado con supresores naturales del apetito e ingredientes para ayudar a desintoxicar su cuerpo, Prevail Troplical Blast es una excelente adición a cualquier programa de control de peso.<br> <br>
+                Y como si ayudar a controlar el peso de una manera saludable no fuera lo suficientemente emocionante, ¡Te enamorarás de como te sientes cuando pruebe esta deliciosa bebida!<br>Características del Tropical Blast <br> <br>
+                Fórmula única potenciada y exclusiva,<br>Control de peso saludable,<br>Su efecto dura horas,<br>Ayuda a eliminar la grasa visceral
+            </div>
+          </div>
+       </div>
+        <div class="item">
+          <div class="item-header" id="heading6">
+            <h2 style="margin-bottom: 1.5rem;">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                data-target="#collapse6" aria-expanded="false"
+                aria-controls="collapse6">
+                <h3>EMULIN</h3>
+                <i class="fa fa-angle-down"></i>
+            </button>
+          </h2>
+        </div>
+      <div id="collapse6" class="collapse" aria-labelledby="heading6"
+      data-parent="#accordionExample">
+        <div class="t-p">
+            Valentus Prevail eMulin ™ es una mezcla totalmente natural patentada de 3 ingredientes que trabajan en sinergia para reducir significativamente los efectos negativos de los carbohidratos, proporcionando energía sostenida durante todo el día. <br> <br>
+            Desarrollado por el científico dos veces nominado al Premio Nobel, el Dr. Joe Ahrens. A menudo dice que si eMulin ™ se descubrió hace 50 años, se habría clasificado como una “vitamina”. El procesamiento de alimentos de hoy en día ha eliminado ciertos compuestos de nuestra dieta. Estos deben volver a agregarse mediante suplementos: 500 mg de Valentus Prevail eMulin ™ lo proporcionan. <br> <br>
+            ¿Cómo lo hace? <br> <br>
+            A través del procesamiento de alimentos y la ingeniería durante los últimos 100 años, sin darnos cuenta, hemos despojado a nuestros alimentos de compuestos críticos previamente no descubiertos. Estos compuestos ahora son imposibles de obtener a través de la dieta. <br> <br>
+        </div>
+      </div>
+    </div>
+    <div class="add-btn">
+      <button class="button_custom"> <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>Pedir Este Pack</a> </button>
+    </div>
+  </section>
+
+  <section class="equilibrio">
+  <div class="producto-flex container">
+    <div class="product-one">
+      <img  src="assets/img/reto5.png" alt="Reto 5">
+        <p>
+          Controla tu apetito y la ansiedad tomando una taza de café a 
+          primera hora de la mañana combinado con un suplemento de 
+          fibras con supresiones del apetito haciendo el efecto de un balón 
+          gástrico y antes de dormir una deliciosa  taza de té frío que te 
+          ayuda a desintoxicar el metabolismo y a regular el tránsito 
+          intestinal.
+        </p>
+      </div>
+        <div class="description">
+          <h3>Pack Equilibrio</h3>
+            <p>“Ideal para nivelar los niveles de azúcar en <br> sangre”.</p>
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+                    <div class="item">
+                        <div class="item-header" id="heading7">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                <h3>Thermo Perk</h3>
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse7" class="collapse" aria-labelledby="heading7"
+                    data-parent="#accordionExample">
+                    <div class="t-p">
+                        El Thermo Perk de Valentus son cápsulas que ayudan a potenciar el café Thermo Roast. Maximizando su poder en la perdida de peso y volumen. <br>
+                        No contiene lácteos, ni gluten, sin OGM (<em>organismo genéticamente modificado</em>) y sin azúcar. <br>
+                        Contiene 60 mg de cafeína que ayuda a impulsar el metabolismo. Extracto de pimienta negra, Huperzine A y Yohimbine <br>
+                        <br>
+                        <h4 class="has-text-align-center">Entre sus Beneficios</h4>
+                        <ul>
+                            <li>Da un golpe extra de energia.</li>
+                            <li>Aumenta la quema de grasa termogénica</li>
+                            <li>Pérdida de peso ′′ refuerzo ′′</li>
+                            <li>Refuerzo del buen humor</li>
+                        </ul>
+
+                        Puedes sentir como te mejorar tu estado de animo y bajas de talla en ropa al perder volumen
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header" id="heading8">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        <h3>Thermo Roast</h3>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse8" class="collapse" aria-labelledby="heading8"
+            data-parent="#accordionExample">
+            <div class="t-p">
+                Millones de personas en todo el mundo luchan a diario para encontrar una estrategia eficaz para controlar el peso. Para la mayoría, el proceso es casi insoportable. <br> <br>
+                Luchan con los altibajos del control de peso: falta de energía, cambios de humor locos, cuerpos hambrientos de nutrientes. No se puede lograr un mejor estado de ánimo y rendimiento con un solo nutriente; Puede requerir una “pila” (o grupo) de varios nutrientes que funcionan de forma independiente trabajando juntos <br> <br>
+                – ThermoRoast Coffee ofrece esa opción. Formulada con supresores naturales del apetito, ingredientes para sentirse bien y componentes de desintoxicación, ThermoRoast Coffee es el complemento perfecto para su programa de control de pérdida ! No solo encontrará que controlar su peso con ThermoRoast produce resultados emocionantes, sino que le encantará el sabor de este delicioso café. <br> <br>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-header" id="heading9">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+              data-target="#collapse9" aria-expanded="false"
+              aria-controls="collapse9">
+              <h3>Hiburne 8</h3>
+              <i class="fa fa-angle-down"></i>
+            </button>
+          </h2>
+        </div>
+      <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+        <div class="t-p">
+            Creemos que todo el mundo merece la oportunidad de estar saludable y en forma. ¡Es nuestro compromiso ayudarle a conseguirlo! ¿Está preparado para el reto? Si finalmente está listo para controlar su peso y su salud,<strong> ¡AHORA es el momento de hacerlo realidad!</strong> 
+            <br><br>Skinny Fiber está ENVASADO con algunos de los ingredientes de control de peso <strong> MÁS PODEROSOS </strong> del mundo para ayudar a que su cuerpo entre en el modo de control de peso y mantener el peso para siempre. <br><br>
+            <ul>
+                <li>Ayuda a sentirse más lleno y a comer menos.</li>
+                <li>Ayuda a quemar grasas.</li>
+                <li>Reduce la absorción de grasa en el cuerpo.</li>
+                <li>Elimina toxinas.</li>
+                <li>Reduce los antojos entre comidas</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="add-btn">
+      <button class="button_custom"> <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>Pedir Este Pack</a> </button>
+    </div>
+  </section>
+
+  <section class="reto">
+    <div class="reto-text">
+      <h2>Únete a  miles de personas que ya lo están logrando </h2>
+      <h3>gracias al Reto 21 de Valentus</h3>
+    </div>
+    <div class="reto-video">
+      <div class="reto-flex">
+        <div class="video-item">
+          <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/488965583?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+        </div>
+        <div class="video-item">
+          <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/488959443?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t="></iframe>
+        </div>
+        <div class="video-item">
+          <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/483584729?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+        </div>
+        <div class="video-item">
+          <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482742663?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+        </div>
+        <div class="video-item">
+          <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482742162?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+        </div>
+        <div class="video-item">
+          <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482597614?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="reto-video" style="background-color: #E6266A;">
+      <div class="reto-flex">
+          <div class="video-item">
+            <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482595238?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+          </div>
+          <div class="video-item">
+            <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482595451?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+          </div>
+          <div class="video-item">
+            <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482595602?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+          </div>
+          <div class="video-item">
+            <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482595814?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+          </div>
+          <div class="video-item">
+            <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482735151?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+          </div>
+          <div class="video-item">
+            <iframe class="elementor-video-iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/482596351?start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0#t="></iframe>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+      $(document).ready(function () {
+          $('.toTop').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({ 
+                  scrollTop: 0,
+              }, 700)
+          });
+
+      });
+  </script>
+</body>
+</html>
